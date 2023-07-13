@@ -28,7 +28,7 @@ performCalc = OtherFunc; // throws an error
 ```
 And can only be invoked by the class that instansiated the event.
 ```c#
-public event EventHandler myEvent; // EventHandler is a type of delegate
+public event EventHandler MyEvent; // EventHandler is a type of delegate
 
 private void Update() {
     myEvent?.Invoke();
@@ -44,12 +44,12 @@ Allow the creation of delegates on a single line.
 
 **Actions:** Delegates that have parameters but no return value
 ```c#
-public event Action myAction; // instance of Action
-public event Action<int> myIntAction; // instance that takes an int parameter
+public event Action MyAction; // instance of Action
+public event Action<int> MyIntAction; // instance that takes an int parameter
 ```
 **Funcs:** Delegates that can have parameters and a return value
 ```c#
-public event Func<int, float> myIntFunc; // last parameter is the return value
+public event Func<int, float> MyIntFunc; // last parameter is the return value
 ```
 
 <br>
